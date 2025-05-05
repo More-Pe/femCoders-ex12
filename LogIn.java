@@ -7,10 +7,10 @@ public class LogIn {
         String usuario = "MorePe";
         String clave = "12345";
         Scanner login = new Scanner(System.in);
-        System.out.println("Ingresa tu nombre de usuario: ");
-        String user = login.nextLine();
-        System.out.println("Ingresa tu contraseña ");
-        String password = login.nextLine();
+        System.out.print("Ingresa tu nombre de usuario: ");
+        String user = login.next();
+        System.out.print("Ingresa tu contraseña ");
+        String password = login.next();
         if (user.equals(usuario) && password.equals(clave)) {
             System.out.println("Acceso concedido");
         } else {
